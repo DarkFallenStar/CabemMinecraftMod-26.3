@@ -1,4 +1,4 @@
-package net.darkfallenstar.cabemMod;
+package net.darkfallenstar.sussymod;
 
 import java.util.List;
 
