@@ -1,6 +1,7 @@
 {
-  "item.sussymod.bluerocks": "Blue Rocks",
+  "item.sussymod.blue_rocks": "Blue Rocks",
   "item.sussymod.tomato": "Tomato",
 
-  "block.sussymod.tomato_block": "Block of Tomato"
+  "block.sussymod.tomato_block": "Block of Tomato",
+  "block.sussymod.blue_rocks_block": "Block of Blue Rocks"
 }

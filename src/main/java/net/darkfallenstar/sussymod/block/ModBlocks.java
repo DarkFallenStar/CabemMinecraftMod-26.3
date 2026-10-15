@@ -13,6 +13,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
+import java.util.function.UnaryOperator;
 
 import static net.darkfallenstar.sussymod.item.ModItems.ITEMS;
 
@@ -28,24 +29,21 @@ public class ModBlocks {
                     .sound(SoundType.WET_SPONGE)
     );
 
-    private static DeferredBlock<Block> registerSimpleBlock(
-            String name,
-            Supplier<BlockBehaviour.Properties> properties)
+    public static final DeferredBlock<Block> BLUE_ROCKS_BLOCK = registerSimpleBlock(
+            "blue_rocks_block",
+            () -> BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST)
+    );
+
+    private static DeferredBlock<Block>
+    registerSimpleBlock(String name, Supplier<BlockBehaviour.Properties> properties)
     {
         DeferredBlock<Block> block = BLOCKS.registerSimpleBlock(name, properties);
         ModItems.ITEMS.registerSimpleBlockItem(block);
         return block;
     }
-
-    /*private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
-        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        return toReturn;
-    }
-
-   /* private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block){
-        ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
-    }*/
 
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);

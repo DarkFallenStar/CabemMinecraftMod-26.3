@@ -53,11 +53,12 @@ public class SussyMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BLUEROCKS);
+            event.accept(ModItems.BLUE_ROCKS);
             event.accept(ModItems.TOMATO);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TOMATO_BLOCK);
+            event.accept(ModBlocks.BLUE_ROCKS_BLOCK);
         }
     }
 

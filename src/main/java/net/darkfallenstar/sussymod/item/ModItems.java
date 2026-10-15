@@ -9,8 +9,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems  {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SussyMod.MODID);
 
-    public static final DeferredItem<Item> BLUEROCKS = ITEMS.registerSimpleItem(
-            "bluerocks"
+    public static final DeferredItem<Item> BLUE_ROCKS = ITEMS.registerSimpleItem(
+            "blue_rocks"
     );
 
     public static final DeferredItem<Item> TOMATO = ITEMS.registerSimpleItem(
