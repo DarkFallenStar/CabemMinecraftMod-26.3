@@ -1,7 +1,12 @@
 {
   "item.sussymod.blue_rocks": "Blue Rocks",
   "item.sussymod.tomato": "Tomato",
+  "item.sussymod.cooked_tomato": "Cooked Tomato",
 
   "block.sussymod.tomato_block": "Block of Tomato",
-  "block.sussymod.blue_rocks_block": "Block of Blue Rocks"
+  "block.sussymod.tomato_stone_ore": "Tomato Stone Ore",
+  "block.sussymod.blue_rocks_block": "Block of Blue Rocks",
+
+  "creativetab.sussymod.sussy_items": "Sussy Items",
+  "creativetab.sussymod.sussy_blocks": "Sussy Blocks"
 }

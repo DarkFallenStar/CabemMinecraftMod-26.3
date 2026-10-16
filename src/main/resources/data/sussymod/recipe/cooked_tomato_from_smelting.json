@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": "sussymod:tomato",
+  "result": {
+    "id": "sussymod:cooked_tomato"
+  }
+}

@@ -29,6 +29,14 @@ public class ModBlocks {
                     .sound(SoundType.WET_SPONGE)
     );
 
+    public static final DeferredBlock<Block> TOMATO_STONE_ORE = registerSimpleBlock(
+            "tomato_stone_ore",
+            () -> BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+    );
+
     public static final DeferredBlock<Block> BLUE_ROCKS_BLOCK = registerSimpleBlock(
             "blue_rocks_block",
             () -> BlockBehaviour.Properties.of()

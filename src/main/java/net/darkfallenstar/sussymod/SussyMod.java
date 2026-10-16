@@ -1,6 +1,7 @@
 package net.darkfallenstar.sussymod;
 
 import net.darkfallenstar.sussymod.block.ModBlocks;
+import net.darkfallenstar.sussymod.item.ModCreativeModeTabs;
 import net.darkfallenstar.sussymod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -36,6 +37,8 @@ public class SussyMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -55,6 +58,7 @@ public class SussyMod {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BLUE_ROCKS);
             event.accept(ModItems.TOMATO);
+            event.accept(ModItems.COOKED_TOMATO);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TOMATO_BLOCK);

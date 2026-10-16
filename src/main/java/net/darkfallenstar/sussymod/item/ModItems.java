@@ -17,6 +17,10 @@ public class ModItems  {
             "tomato"
     );
 
+    public static final DeferredItem<Item> COOKED_TOMATO = ITEMS.registerSimpleItem(
+            "cooked_tomato"
+    );
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
